@@ -1,0 +1,35 @@
+:host {
+  .menu, .submenu {
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .submenu {
+    &.hidden {
+      display: none;
+      max-height: 0;
+      -webkit-transition: all 0.5s ease-out;
+    }
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.mat-list-base {
+  padding-top: 0px;
+}
+
+.sidenav {
+  padding: 0px;
+  width: 200px;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  // .sidenav {
+  //   padding-top: 15px;
+  // }
+}

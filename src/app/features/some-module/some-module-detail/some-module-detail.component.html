@@ -1,0 +1,77 @@
+<form class="example-container" [formGroup]="userForm">
+  <div class="profile-pic-container">
+    <mat-icon class="profile-pic">account_circle</mat-icon>
+  </div>
+  <div>
+    <mat-form-field class="full-field" appearance="legacy">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="fname" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="full-field" appearance="legacy">
+      <mat-label>Middle Name</mat-label>
+      <input matInput formControlName="mname" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="full-field" appearance="legacy">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lname" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="legacy">
+      <mat-label>Nationality</mat-label>
+      <input matInput />
+    </mat-form-field>
+    &nbsp;
+    <mat-form-field appearance="legacy">
+      <mat-label>Height</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Date of Birth" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    &nbsp;
+    <mat-form-field appearance="legacy">
+      <mat-label>Weight</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <br />
+    <p>Sex</p>
+    <mat-radio-group aria-label="Sex">
+      <mat-radio-button value="1">Male</mat-radio-button>
+      <mat-radio-button value="2">Female</mat-radio-button>
+    </mat-radio-group>
+    <br />
+    <mat-form-field class="full-field" appearance="legacy">
+      <mat-label>Address</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="Date of Issue" />
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker3" placeholder="Valid Until" />
+      <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+      <mat-datepicker #picker3></mat-datepicker>
+    </mat-form-field>
+
+    <br /><br />
+    <div mat-dialog-actions>
+      <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial color="primary"
+        *ngIf="this.data.action !== 'view'">
+        Save
+      </button>
+      &nbsp;
+      <button mat-raised-button (click)="onNoClick()">Close</button>
+    </div>
+  </div>
+</form>

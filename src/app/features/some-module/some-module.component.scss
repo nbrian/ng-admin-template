@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+button {
+    float: right;
+}
+
+.search-icon {
+    position: absolute;
+    left: 95%;
+    top: 21%;
+}
+
+.search-bar {
+    width: 500px;
+}
+
+.addBtn {
+    margin-top: 2%;
+}
+
+.action-icon {
+    margin-left: 10px;
+}
+
+.action-icon:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+:host {
+  background-color: #181818;
+
+  li a {
+    display: flex;
+    text-decoration: none;
+    padding: 1em .5em 1em 1em;
+    font-size: 17px;
+    color: #818181;
+
+    .mat-icon {
+      margin-right: .3em;
+    }
+
+    .ng-fa-icon {
+      margin-right: .3em;
+      height: 24px;
+      width: 24px;
+    }
+
+    &:hover {
+      background-color: #C5C5C5;
+      color: #f1f1f1;
+    }
+  }
+
+  .submenu-item a {
+    padding-left: 2em;
+  }
+
+  .hidden {
+    overflow: hidden;
+  }
+}

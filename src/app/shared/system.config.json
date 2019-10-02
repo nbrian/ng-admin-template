@@ -1,0 +1,9 @@
+{
+    "constants": {
+        "messages": {
+            "delete": "Are you sure you want to delete this item?",
+            "save": "Successfully saved",
+            "error": "Error"
+        }
+    }
+}

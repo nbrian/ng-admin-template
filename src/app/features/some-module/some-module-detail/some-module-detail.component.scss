@@ -1,0 +1,21 @@
+.full-field {
+    display: block;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+
+.profile-pic-container {
+    text-align: center;
+}
+
+.profile-pic {
+    font-size: 100px;
+    display: inline-block;
+    margin-right: 13%;
+}
+
+.btnContainer {
+    float: right;
+}

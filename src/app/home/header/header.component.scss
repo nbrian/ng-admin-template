@@ -1,0 +1,24 @@
+mat-toolbar {
+  display: flex;
+
+  .logo {
+    padding-right: 10px;
+
+    img {
+      width: 50px;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .user-icon {
+    padding: 0 14px;
+    mat-icon {
+        transform: scale(2);
+    }
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
