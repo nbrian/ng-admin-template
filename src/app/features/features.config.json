@@ -1,46 +1,8 @@
 {
   "name": "Application Name",
   "menu": [{
-      "name": "Dashboard",
-      "icon": "dashboard",
-      "url": "home"
-    },
-    {
-      "name": "Users",
-      "icon": "people",
-      "url": "users"
-    },
-    {
-      "name": "Roles",
-      "icon": ["fas", "square"],
-      "url": "roles"
-    },
-    {
-      "name": "Multi Level",
-      "icon": "",
-      "url": "sample",
-      "children": [{
-          "name": "Module 1",
-          "icon": "",
-          "url": ""
-        },
-        {
-          "name": "Module 2",
-          "icon": "",
-          "url": ""
-        },
-        {
-          "name": "Module 3",
-          "icon": "",
-          "url": ""
-        }
-      ]
-    },
-    {
-      "name": "Sample Module",
-      "icon": "pets",
-      "url": "some-module"
-    }
-
-  ]
+    "name": "Dispatch",
+    "icon": "directions_run",
+    "url": "dispatch"
+  }]
 }

@@ -6,19 +6,11 @@ import { SomeModuleComponent } from '../features/some-module/some-module.compone
 import { UsersComponent } from '../admin/users/users.component';
 import { RolesComponent } from '../admin/roles/roles.component';
 import { SampleComponent } from '../features/sample/sample.component';
+import { DispatchComponent } from '../features/dispatch/dispatch.component';
 
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'users', component: UsersComponent },
-  { path: 'roles', component: RolesComponent },
-  { path: 'documents', component: DocumentsComponent, children: [
-    { path: 'certifications', component: DocumentsComponent },
-    { path: 'clearances', component: DocumentsComponent },
-    { path: 'permits', component: DocumentsComponent }
-  ] },
-  { path: 'some-module', component: SomeModuleComponent },
-  { path: 'sample', component: SampleComponent }
+  { path: 'dispatch', component: DispatchComponent }
 ];
 
 @NgModule({

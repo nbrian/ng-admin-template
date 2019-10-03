@@ -8,6 +8,7 @@ import { SampleComponent } from './sample/sample.component';
 import { ConfirmationDialog, Dialog, PageContainerComponent } from '../shared/components/components';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { DispatchComponent } from './dispatch/dispatch.component';
 
 const modules = [
   PageContainerComponent,
@@ -17,7 +18,8 @@ const modules = [
   ConfirmationDialog,
   Dialog,
   SomeModuleDetailComponent,
-  SampleComponent
+  SampleComponent,
+  DispatchComponent
 ];
 @NgModule({
   declarations: modules,
