@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 import { MaterialModule, FaIconsModule } from './shared/libraries/libraries';
 import { HomeModule } from './home/home.module';
+import { AngularOpenlayersModule } from 'ngx-openlayers';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HomeModule } from './home/home.module';
     FaIconsModule,
     ReactiveFormsModule,
     HomeModule,
+    AngularOpenlayersModule,
     AppRoutingModule,
   ],
   providers: [],

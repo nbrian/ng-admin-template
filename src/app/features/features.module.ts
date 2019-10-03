@@ -9,6 +9,7 @@ import { ConfirmationDialog, Dialog, PageContainerComponent } from '../shared/co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DispatchComponent } from './dispatch/dispatch.component';
+import { AngularOpenlayersModule } from 'ngx-openlayers';
 
 const modules = [
   PageContainerComponent,
@@ -29,7 +30,8 @@ const modules = [
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    FaIconsModule
+    FaIconsModule,
+    AngularOpenlayersModule
   ],
   entryComponents: [
     ConfirmationDialog,
